@@ -1,0 +1,11 @@
+h2{
+    display: flex;
+    justify-content: center;
+ }
+.social-media-elements{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}

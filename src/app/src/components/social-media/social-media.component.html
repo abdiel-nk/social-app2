@@ -1,0 +1,18 @@
+<app-main-container>
+    <div class="social-media-container">
+        <h2>Mis Redes</h2>
+        <div class="social-media-elements">
+            @for(socialMediaElement of socialMediaList;
+            track socialMediaElement.name)
+            {
+               <app-socialmedia-element 
+                
+                wobble
+                [socialMediaElement]="socialMediaElement">
+   
+               </app-socialmedia-element>
+           }
+        </div>
+        
+    </div>
+</app-main-container>
