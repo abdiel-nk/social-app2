@@ -1,4 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, inject, Input, SimpleChange, SimpleChanges } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 
@@ -6,7 +6,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-iframe-video',
   standalone: true,
-  imports: [MainContainerComponent],
+  imports: [],
   templateUrl: './iframe-video.component.html',
   styleUrl: './iframe-video.component.css'
 })
@@ -19,4 +19,11 @@ export class IframeVideoComponent {
 
   _videoSrc: SafeResourceUrl = '';
 
+
+//   ngOnChanges(changes: SimpleChanges){
+//     if(changes['videoSrc']){
+//       this._videoSrc = this.domeSanitizer.bypassSecurityTrustResourceUrl(this.videoSrc);
+//     }
+
+//   }
 }
